@@ -1,0 +1,39 @@
+[
+    { "type": "decoration", "name": "&0","lore": "&0","itemID": 160,"itemDAMAGE": 2 },
+    { "type": "decoration", "name": "&0","lore": "&0","itemID": 160,"itemDAMAGE": 2 },
+    { "type": "decoration", "name": "&0","lore": "&0","itemID": 160,"itemDAMAGE": 2 },
+    { "type": "decoration", "name": "&0","lore": "&0","itemID": 160,"itemDAMAGE": 2 },
+    { "type": "decoration", "name": "&0","lore": "&0","itemID": 160,"itemDAMAGE": 2 },
+    { "type": "decoration", "name": "&0","lore": "&0","itemID": 160,"itemDAMAGE": 2 },
+    { "type": "decoration", "name": "&0","lore": "&0","itemID": 160,"itemDAMAGE": 2 },
+    { "type": "decoration", "name": "&0","lore": "&0","itemID": 160,"itemDAMAGE": 2 },
+    { "type": "decoration", "name": "&0","lore": "&0","itemID": 160,"itemDAMAGE": 2 },
+    
+    {
+        "type": "function",
+        "name": "&dPlayTime",
+        "lore": "&7This will import a &dPlaytime &cfunction&7 into your\n&7house that can calculate the local players &aseconds&7,\n&aminutes&7, and &ahours&7 played on your house!\n&7It is also setup for global playtime/house uptime.\n\n&7It uses &e%date.unix%&r&f to keep it accurate. &cShould be placed\n&cinto a poison loop to work properly.",
+        "itemID": 347,
+        "itemDAMAGE": 0,
+        "HEAction": "649e20e065961a60088995d9"
+    },
+    
+    { "type": "decoration", "name": "&c&lN/A","lore": "&fNavigate to the &lHousingHelper &r&ffolder to &cedit&f the &6templates&f and &ashare &fthem to &bothers&f!","itemID": 166,"itemDAMAGE": 0 },
+    { "type": "decoration", "name": "&c&lN/A","lore": "&fNavigate to the &lHousingHelper &r&ffolder to &cedit&f the &6templates&f and &ashare &fthem to &bothers&f!","itemID": 166,"itemDAMAGE": 0 },
+    { "type": "decoration", "name": "&c&lN/A","lore": "&fNavigate to the &lHousingHelper &r&ffolder to &cedit&f the &6templates&f and &ashare &fthem to &bothers&f!","itemID": 166,"itemDAMAGE": 0 },
+    { "type": "decoration", "name": "&c&lN/A","lore": "&fNavigate to the &lHousingHelper &r&ffolder to &cedit&f the &6templates&f and &ashare &fthem to &bothers&f!","itemID": 166,"itemDAMAGE": 0 },
+    { "type": "decoration", "name": "&c&lN/A","lore": "&fNavigate to the &lHousingHelper &r&ffolder to &cedit&f the &6templates&f and &ashare &fthem to &bothers&f!","itemID": 166,"itemDAMAGE": 0 },
+    { "type": "decoration", "name": "&c&lN/A","lore": "&fNavigate to the &lHousingHelper &r&ffolder to &cedit&f the &6templates&f and &ashare &fthem to &bothers&f!","itemID": 166,"itemDAMAGE": 0 },
+    { "type": "decoration", "name": "&c&lN/A","lore": "&fNavigate to the &lHousingHelper &r&ffolder to &cedit&f the &6templates&f and &ashare &fthem to &bothers&f!","itemID": 166,"itemDAMAGE": 0 },
+    { "type": "decoration", "name": "&c&lN/A","lore": "&fNavigate to the &lHousingHelper &r&ffolder to &cedit&f the &6templates&f and &ashare &fthem to &bothers&f!","itemID": 166,"itemDAMAGE": 0 },
+
+    { "type": "decoration", "name": "&0","lore": "&0","itemID": 160,"itemDAMAGE": 2 },
+    { "type": "decoration", "name": "&0","lore": "&0","itemID": 160,"itemDAMAGE": 2 },
+    { "type": "decoration", "name": "&0","lore": "&0","itemID": 160,"itemDAMAGE": 2 },
+    { "type": "decoration", "name": "&0","lore": "&0","itemID": 160,"itemDAMAGE": 2 },
+    { "type": "decoration", "name": "&0","lore": "&0","itemID": 160,"itemDAMAGE": 2 },
+    { "type": "decoration", "name": "&0","lore": "&0","itemID": 160,"itemDAMAGE": 2 },
+    { "type": "decoration", "name": "&0","lore": "&0","itemID": 160,"itemDAMAGE": 2 },
+    { "type": "decoration", "name": "&0","lore": "&0","itemID": 160,"itemDAMAGE": 2 },
+    { "type": "decoration", "name": "&0","lore": "&0","itemID": 160,"itemDAMAGE": 2 }
+]
