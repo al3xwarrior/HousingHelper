@@ -1,6 +1,6 @@
-import  { createFakePlayer, removeFakePlayer } from "../util/spawnFakePlayer";
-import { getSkinTexture } from "../util/skinTextureURL";
-import Settings from "../util/Settings";
+import { createFakePlayer, removeFakePlayer } from '../util/spawnFakePlayer';
+import { getSkinTexture } from '../util/skinTextureURL';
+import Settings from '../util/Settings';
 
 var housingLobby = false;
 var npcs = {
@@ -9,12 +9,12 @@ var npcs = {
     number3: null,
     number4: null,
     number5: null,
-    number6: null
+    number6: null,
 };
 
 function getFeaturedHouses() {
     // /api/browser
-    const houses = FileLib.getUrlContent("http://198.50.156.132:8095/api/browser");
+    const houses = FileLib.getUrlContent('http://198.50.156.132:8095/api/browser');
     return JSON.parse(houses);
 }
 
@@ -44,26 +44,37 @@ function spawnNPCs() {
     }
 }
 
-function deleteNPCs() { removeFakePlayer(npcs.number1); removeFakePlayer(npcs.number2); removeFakePlayer(npcs.number3); removeFakePlayer(npcs.number4); removeFakePlayer(npcs.number5); removeFakePlayer(npcs.number6); }
+function deleteNPCs() {
+    removeFakePlayer(npcs.number1);
+    removeFakePlayer(npcs.number2);
+    removeFakePlayer(npcs.number3);
+    removeFakePlayer(npcs.number4);
+    removeFakePlayer(npcs.number5);
+    removeFakePlayer(npcs.number6);
+}
 
-register("worldLoad", () => {
-    if (!Settings.featuredHouses) {return;}
+register('worldLoad', () => {
+    if (!Settings.featuredHouses) {
+        return;
+    }
     setTimeout(() => {
-        if (Scoreboard.getLinesByScore(5) && Scoreboard.getLinesByScore(5)[0].toString() === "§fHypixel Housin🏀§fg!") {
+        if (Scoreboard.getLinesByScore(5) && Scoreboard.getLinesByScore(5)[0].toString() === '§fHypixel Housin🏀§fg!') {
             housingLobby = true;
-            spawnNPCs()
+            spawnNPCs();
         } else {
             housingLobby = false;
-            deleteNPCs()
+            deleteNPCs();
         }
     }, 500);
-})
+});
 
-register("attackEntity", (entity, e) => {
-    if (!Settings.featuredHouses) {return;}
-    const name = entity.getName();
-    if (name.includes("#1 ") || name.includes("#2 ") || name.includes("#3 ") || name.includes("#4 ") || name.includes("#5 ") || name.includes("#6 ")) {
-        const split = name.split(" ");
-        ChatLib.command("visit " + ChatLib.removeFormatting(split[1]));
+register('attackEntity', (entity, e) => {
+    if (!Settings.featuredHouses) {
+        return;
     }
-})
+    const name = entity.getName();
+    if (name.includes('#1 ') || name.includes('#2 ') || name.includes('#3 ') || name.includes('#4 ') || name.includes('#5 ') || name.includes('#6 ')) {
+        const split = name.split(' ');
+        ChatLib.command('visit ' + ChatLib.removeFormatting(split[1]));
+    }
+});

@@ -1,12 +1,11 @@
-
-const Mouse = Java.type("org.lwjgl.input.Mouse");
-import { ChestMenu } from "ChestMenu";
-import loadAction from "../../../../modules/HousingEditor/api/loadAction";
-import inputAnvil from "../../../../modules/HousingEditor/utils/inputAnvil";
+const Mouse = Java.type('org.lwjgl.input.Mouse');
+import { ChestMenu } from 'ChestMenu';
+import loadAction from '../../../../modules/HousingEditor/api/loadAction';
+import inputAnvil from '../../../../modules/HousingEditor/utils/inputAnvil';
 
 var queue = [];
 
-const templates = JSON.parse(FileLib.read("./config/ChatTriggers/modules/HousingHelper/templates.json"));
+const templates = JSON.parse(FileLib.read('./config/ChatTriggers/modules/HousingHelper/templates.json'));
 
 function findObject(name) {
     for (let i = 0; i < templates.length; i++) {
@@ -16,18 +15,18 @@ function findObject(name) {
     }
 }
 
-var menuItems = []
+var menuItems = [];
 for (let i = 0; i < templates.length; i++) {
-    menuItems.push(new Item(templates[i].itemID).setName(templates[i].name).setLore(templates[i].lore).setDamage(templates[i].itemDAMAGE))
+    menuItems.push(new Item(templates[i].itemID).setName(templates[i].name).setLore(templates[i].lore).setDamage(templates[i].itemDAMAGE));
 }
 
-const menu = new ChestMenu("&dTemplates Menu", calculateRows(templates.length));
+const menu = new ChestMenu('&dTemplates Menu', calculateRows(templates.length));
 menu.setItems(menuItems);
 
-const mouse = {x: -1, y: -1};
+const mouse = { x: -1, y: -1 };
 
 function openTemplateMenu() {
-    menu.open()
+    menu.open();
 }
 
 function importTemplate(template) {
@@ -35,9 +34,9 @@ function importTemplate(template) {
     console.log(template);
 
     queue.push([findObject(template).type]);
-    queue.push(["click", 50]);
-    queue.push(["inputToAnvil", template])
-    queue.push(["loadHEAction", findObject(template).HEAction])
+    queue.push(['click', 50]);
+    queue.push(['inputToAnvil', template]);
+    queue.push(['loadHEAction', findObject(template).HEAction]);
 }
 
 menu.onClick((item, slotNumber) => {
@@ -46,13 +45,15 @@ menu.onClick((item, slotNumber) => {
         mouse.y = Mouse.getY();
 
         const itemname = item.getName();
-        if (itemname.includes("PlayTime")) {
-            importTemplate("PlayTime")
+        if (itemname.includes('PlayTime')) {
+            importTemplate('PlayTime');
         }
     }
 });
 
-register("command", () => { openTemplateMenu(); }).setName("templates");
+register('command', () => {
+    openTemplateMenu();
+}).setName('templates');
 
 function calculateRows(number) {
     if (number >= 1 && number <= 9) {
@@ -71,32 +72,36 @@ QUEUE INFORMATION
 "["loadHEAction", string]" = Use HousingEditors loadAction function
 
 */
-register("step", () => {
-    if (queue.length < 0) {return;}
+register('step', () => {
+    if (queue.length < 0) {
+        return;
+    }
 
     const next = queue[0];
-    if (!next) {return;}
+    if (!next) {
+        return;
+    }
 
     console.log(next);
 
     if (next.length < 2) {
         switch (next[0]) {
-            case "function":
-                ChatLib.say("/functions");
+            case 'function':
+                ChatLib.say('/functions');
                 break;
-            case "command":
-                ChatLib.say("/commands");
-                break
+            case 'command':
+                ChatLib.say('/commands');
+                break;
         }
     } else {
         switch (next[0]) {
-            case "click":
+            case 'click':
                 Player.getContainer().click(next[1]);
                 break;
-            case "inputToAnvil":
+            case 'inputToAnvil':
                 inputAnvil(next[1]);
                 break;
-            case "loadHEAction":
+            case 'loadHEAction':
                 loadAction(next[1]);
                 break;
         }
@@ -106,5 +111,5 @@ register("step", () => {
 }).setDelay(1);
 
 module.exports = {
-    openTemplateMenu
-}
+    openTemplateMenu,
+};

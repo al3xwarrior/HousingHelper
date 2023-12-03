@@ -1,24 +1,16 @@
-const emojis = {
-    "Hearts": "♥ ♡ ❤ ❥ ❣ ❦ ❧",
-    "Hand Symbols": "☝ ☞ ☜ ☟ ✌ ✍ ☛ ☚",
-    "Coin Symbols": "⛀ ⛁ ⛃ ⛂",
-    "Skyblock Symbols": "❁ ❤ ❈ ❂ ✦ ✎ ☣ ☠ ⚔ ⫽ ✯ ♣ α ๑ ⸕ ✧ ☘ ⸎ ʬ ♨ ᠅ ≈ ❣ ✆ ✪ ☀ ☽ ⏣ ✌ ♲ ☀ ⚠ ✿ ♪ ♫ ⓪ ⓩ ▲ ⁍ ⚚ ✖ ✔ ➜ ﴾ ﴿ ☬ ☄ ⚑ Ⓑ ☺ ♞ ✷ ⦾",
-    "Block Symbols": "❏ ❐ ❑ ❒ ▀ ▁ ▂ ▃ ▄ ▅ ▆ ▇ ▉ ▊ ▋ █ ▌ ▐ ▍ ▎ ▏ ▒ ░ ▓ ■ ▢",
-    "Circle Symbols": "◉ ○ ◌ ◍ ◎ ● ◐ ◑ ◒ ◓ ◔ ◕ ◖ ◗ ❂ ☢ ⊗ ⊙ ◯ 〇 ⚫ ⬤ ◦ ⦿ ❍ ⊛ ⊚ ⊕ ⊖ • ∙",
-    "Star and Flower Symbols": "★ ☆ ✡ ✦ ✧ ✩ ✪ ✫ ✬ ✭ ✮ ✯ ✰ ⁎ ⁑ ✢ ✣ ✤ ✥ ✱ ✲ ✳ ✴ ✵ ✶ ✷ ✸ ✹ ✺ ✻ ✼ ✽ ✾ ✿ ❀ ❁ ❂ ❃ ❇ ❈ ❉ ❊ ❋ ❄ ⋆ ✲ ࿏ ⭒ ⍟ ⭐",
-    "Check Marks and X Marks": "✓ ✔ ✗ ✘",
-    "Faces": "☺ ☻ ツ ㋡ ☹ ⍨ ☠ ⍤ ⍢",
-    "Box Drawing Symbols": "─ ━ │ ┃ ┄ ┅ ┆ ┇ ┈ ┉ ┊ ┋ ┌ ┍ ┎ ┏ ┐ ┑ ┒ ┓ └ ┕ ┖ ┗ ┘ ┙ ┚ ┛ ├ ┝ ┞ ┟ ┠ ┡ ┢ ┣ ┤ ┥ ┦ ┧ ┨ ┩ ┪ ┫ ┬ ┭ ┮ ┯ ┰ ┱ ┲ ┳ ┴ ┵ ┶ ┷ ┸ ┹ ┺ ┻ ┼ ┽ ┾ ┿ ╀ ╁ ╂ ╃ ╄ ╅ ╆ ╇ ╈ ╉ ╊ ╋ ⚌ ⚍ ⚎ ⚏ ═ ║ ╒ ╓ ╔ ╕ ╖ ╗ ╘ ╙ ╚ ╛ ╜ ╝ ╞ ╟ ╠ ╡ ╢ ╣ ╤ ╥ ╦ ╧ ╨ ╩ ╪ ╫ ╬ ╭ ╮ ╯ ╰ ╴ ╵ ╶ ╷ ╸ ╹ ╺ ╻ ╼ ╽ ╾ ╿",
-    "Arrow Symbols": "↕ ↖ ↗ ↘ ↙ ↪ ↩ ↺ ↻ ▶ ➜ ➨ ➡ ➠ ➟ ➩ ➪ ➫ ➬ ➭ ➮ ➯ ➱ ➲ ➥ ➦ ➛ ➘ ➙ ➚ ➔ ⇪ ⇩ ⇨ ⇧ ⇦ ↷"
-}
+const emojisString = '♥♡❤❥❣❦❧☝☞☜☟✌✍☛☚⛀⛁⛃⛂❁❤❈❂✦✎☣☠⚔⫽✯♣α๑⸕✧☘⸎ʬ♨᠅≈❣✆✪☀☽⏣✌♲☀⚠✿♪♫⓪ⓩ▲⁍⚚✖✔➜﴾﴿☬☄⚑Ⓑ☺♞✷⦾❏❐❑❒▀▁▂▃▄▅▆▇▉▊▋█▌▐▍▎▏▒░▓■▢◉○◌◍◎●◐◑◒◓◔◕◖◗❂☢⊗⊙◯〇⚫⬤◦⦿❍⊛⊚⊕⊖•∙★☆✡✦✧✩✪✫✬✭✮✯✰⁎⁑✢✣✤✥✱✲✳✴✵✶✷✸✹✺✻✼✽✾✿❀❁❂❃❇❈❉❊❋❄⋆✲࿏⭒⍟⭐✓✔✗✘☺☻ツ㋡☹⍨☠⍤⍢─━│┃┄┅┆┇┈┉┊┋┌┍┎┏┐┑┒┓└┕┖┗┘┙┚┛├┝┞┟┠┡┢┣┤┥┦┧┨┩┪┫┬┭┮┯┰┱┲┳┴┵┶┷┸┹┺┻┼┽┾┿╀╁╂╃╄╅╆╇╈╉╊╋⚌⚍⚎⚏═║╒╓╔╕╖╗╘╙╚╛╜╝╞╟╠╡╢╣╤╥╦╧╨╩╪╫╬╭╮╯╰╴╵╶╷╸╹╺╻╼╽╾╿↕↖↗↘↙↪↩↺↻▶➜➨➡➠➟➩➪➫➬➭➮➯➱➲➥➦➛➘➙➚➔⇪⇩⇨⇧⇦↷';
+const emojis = emojisString.split('');
 
-var emojiMessages = [];
-
-register("command", () => {
-    ChatLib.chat("HELLO!");
-    for (let i = 0; i < emojis.length; i++) {
-        const group = emojis[i];
-        ChatLib.chat(group);
+register('command', () => {
+    var message = '';
+    for (let i = 0; i < message.length; i++) {
+        const char = message.substring(i, i + 1);
+        const textComponent = new TextComponent(char);
+        textComponent.setClick('run_command', 'ct copy ' + char);
+        console.log(textComponent);
+        message += textComponent;
     }
-    ChatLib.chat("HELLO");
-}).setName("emojis").setAliases(["unicode", "unicodes"]);
+    ChatLib.chat(message);
+})
+    .setName('emojis')
+    .setAliases(['unicode', 'unicodes']);
