@@ -23,7 +23,7 @@ import './features/soundStealer';
 import './features/removeAsterisk';
 import './features/parkourTimer';
 import './features/betterVisibility';
-import './features/skinpreview';
+import './features/skinPreview';
 import './features/eggRewards';
 import './features/cookieRewards';
 import './features/betterHousesNPC';
