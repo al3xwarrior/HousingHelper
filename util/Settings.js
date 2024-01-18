@@ -252,7 +252,7 @@ class Settings {
 
     constructor() {
         this.initialize(this);
-        this.setCategoryDescription("Credits", "&bHousingHelper&3 Credits\n\n&7While this mod was developed fully by &bAl3xWarrior&7 there are a few users who helped with ideas and specific parts of the code!\n\n&3sirhypernova&8 - &7Developed the main function for spawning fake NPCs!\n\n&6Pizz4Ninja&8 - &7Remade the whole module making everything look nicer, fixing typos and adding Easter Eggs!")
+        this.setCategoryDescription("Credits", "&bHousingHelper&3 Credits\n\n&7While this mod was developed fully by &bAl3xWarrior&7 there are a few users who helped with ideas and specific parts of the code!\n\n&cBusterBrown1218 &8- &7Developed the &6ShowHouse &7module imported to &fHousingHelper\n\n&3sirhypernova&8 - &7Developed the main function for spawning fake NPCs!\n\n&6Pizz4Ninja&8 - &7Remade the whole module making everything look nicer, fixing typos and adding Easter Eggs!")
         this.setCategoryDescription("Egg Rewards", "&aEgg Rewards &7allows you to run &fcommands&7 when a user collects all the &dEggs&7 in the Housing Egg Hunt! This requires &6Housing+&7 as you need it for the &eEgg Hunt Item&7!")
         this.setCategoryDescription("Cookie Rewards", "&6Cookie Rewards&7 allows you to run &fcommands&7 when a user gifts you a &6Cookie&7! Please note that only the owner receives cookie messages!")
         this.setCategoryDescription("Show House", "&aShowHouse&7 is a module originally created by &3BusterBrown1218&f!\n\n&8Al3x was given permission to add it to this mod, however small changes were made to the original.")
