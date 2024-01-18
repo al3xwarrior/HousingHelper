@@ -125,6 +125,12 @@ class Settings {
         max: 100
     })
     showhouseypos = 5;
+    @ParagraphProperty({
+        name: "Show House &eMessage",
+        description: "Write the message that you want ShowHouse to show. Use {house} for the house name and {owner} for the owner's name.",
+		category: "Show House"
+    })
+    showhousemessage = "Currently playing: {house}, by {owner}"
 
     @ButtonProperty({
         name: "&dGenerate &fIdea",
