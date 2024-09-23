@@ -1,0 +1,84 @@
+
+[cookie_rewards]
+	"&acommand" = "ac Thanks for the Cookies {player} <3"
+	"&a&nenabled" = false
+
+[show_house]
+	"&a&nenabled" = false
+	"&b&ntext_scale" = 12
+	"&7&nbackground_shadow" = true
+	"&b&ntext_y_position" = 1
+	"&8&nbackground_shadow" = false
+	enabled = true
+	"&b&ntext_x_position" = 1
+
+[egg_rewards]
+	"&acommand" = "ac Congrats {player}!"
+	"&a&nenabled" = false
+
+[chat_utilities]
+	"&ecoordinates" = true
+	"&fcoordinates" = true
+	"&e&ncoordinates" = true
+	"&7&nremove_asterisk" = true
+
+["&dplayerid_converter"]
+	"&a&nenabled" = false
+
+[discord_bridge]
+	"&a&nenabled" = false
+
+	[discord_bridge.customization]
+		"&3footer" = "Guests: {guests} | Cookies: {cookies}"
+		"&edescription" = "{message}"
+		"&aname" = "hi"
+		"&bicon_url" = "https://starlightskins.lunareclipse.studio/render/head/{player}/full"
+		"&6thumbnail_url" = "https://starlightskins.lunareclipse.studio/render/default/{player}/full"
+		"&ctitle" = "Message sent in {housename}"
+		"&dthumbnail_url" = ""
+
+	[discord_bridge.required]
+		"&dwebhook" = "https://discord.com/api/webhooks/1078868891347996733/fZI-UjO4iTTJ-H8-31Kh7ZUIpsmS1du-HWX72ezOtfXOrEmZy1lNTSEs6Z1CXvNbMsgw"
+
+[skin_preview]
+	"&a&nenabled" = true
+	"&7skin_preview_&ex&7_position" = 20
+	"&7skin_preview_&ey_&7position" = 30
+
+[utils]
+	"&fsound_stealer" = false
+	"&fconfirm_cookie" = true
+	"&fhtsl_items_creative_tab" = true
+	"&fanti_chest_break" = true
+
+[playerid_converter]
+	"&a&nenabled" = true
+
+[utilities]
+	"&fsound_stealer" = false
+	"&a&nsocial_mode_swap_inventory_restorer" = true
+	"&c&nanti_chest_break" = true
+	"&fconfirm_cookie" = true
+	"&6&nconfirm_cookie" = true
+	"&fanti_chest_break" = false
+	"&d&nsound_stealer" = false
+	"&d&nauto_boop" = true
+	"&c&nsocial_mode_swap_inventory_restorer" = true
+
+[htsl_addons]
+	"&ahtsl_items_creative_tab" = false
+	"&a&nhtsl_items_creative_tab" = true
+
+[parkour_tracker]
+	"&aparkour&f_completion_text" = "&aParkour Tracker: &e&l{time}"
+	"&a&nenabled" = false
+	"&aparkour_active_timer" = "&aParkour Tracker: &2{time}"
+	"parkour_tracker_&etimer_y_position" = 5
+	"&cno_parkour&f_text" = "&aParkour Tracker: &cN/A"
+	"&6parkour_completion_text" = "&aParkour Tracker: &e&l{time}"
+	"&b&ntext_y_position" = 2
+	"parkour_tracker_&etimer_x_position" = 10
+	"&aparkour_active&f_timer" = "&aParkour Tracker: &2{time}"
+	"&cno_parkour_text" = "&aParkour Tracker: &cN/A"
+	"&b&ntext_x_position" = 2
+
