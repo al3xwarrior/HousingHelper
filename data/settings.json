@@ -1,0 +1,227 @@
+[
+    {
+        "category": "Discord Bridge",
+        "settings": [
+            {
+                "type": 6,
+                "name": "discordBridgeEnabled",
+                "value": false
+            },
+            {
+                "type": 4,
+                "name": "discordBridgeWebhook",
+                "value": ""
+            },
+            {
+                "type": 4,
+                "name": "discordBridgeName",
+                "value": ""
+            },
+            {
+                "type": 4,
+                "name": "discordBridgeTitle",
+                "value": ""
+            },
+            {
+                "type": 4,
+                "name": "discordBridgeDescription",
+                "value": ""
+            },
+            {
+                "type": 4,
+                "name": "discordBridgeFooter",
+                "value": ""
+            },
+            {
+                "type": 4,
+                "name": "discordBridgeThumbnailURL",
+                "value": ""
+            },
+            {
+                "type": 4,
+                "name": "discordBridgeIconURL",
+                "value": ""
+            }
+        ]
+    },
+    {
+        "category": "Chat Utilities",
+        "settings": [
+            {
+                "type": 6,
+                "name": "coordinateChat",
+                "value": false
+            },
+            {
+                "type": 6,
+                "name": "removeAsterisk",
+                "value": false
+            }
+        ]
+    },
+    {
+        "category": "Utilities",
+        "settings": [
+            {
+                "type": 6,
+                "name": "confirmCookie",
+                "value": false
+            },
+            {
+                "type": 6,
+                "name": "soundStealer",
+                "value": false
+            },
+            {
+                "type": 6,
+                "name": "restoreinventory",
+                "value": false
+            },
+            {
+                "type": 6,
+                "name": "antichestbreak",
+                "value": false
+            },
+            {
+                "type": 6,
+                "name": "autoBoop",
+                "value": false
+            }
+        ]
+    },
+    {
+        "category": "Skin Preview",
+        "settings": [
+            {
+                "type": 6,
+                "name": "skinPreviewEnabled",
+                "value": false
+            },
+            {
+                "type": 1,
+                "name": "skinPreviewXPos",
+                "value": 0
+            },
+            {
+                "type": 1,
+                "name": "skinPreviewYPos",
+                "value": 0
+            }
+        ]
+    },
+    {
+        "category": "Show House",
+        "settings": [
+            {
+                "type": 6,
+                "name": "showHouse",
+                "value": false
+            },
+            {
+                "type": 1,
+                "name": "showHouseScale",
+                "value": 5
+            },
+            {
+                "type": 1,
+                "name": "showHouseXPos",
+                "value": 0
+            },
+            {
+                "type": 1,
+                "name": "showHouseYPos",
+                "value": 0
+            },
+            {
+                "type": 6,
+                "name": "showHouseBackgroundShadow",
+                "value": false
+            }
+        ]
+    },
+    {
+        "category": "HTSL Addons",
+        "settings": [
+            {
+                "type": 6,
+                "name": "htslCreativeTab",
+                "value": false
+            }
+        ]
+    },
+    {
+        "category": "PlayerID Converter",
+        "settings": [
+            {
+                "type": 6,
+                "name": "playeridconvert",
+                "value": false
+            }
+        ]
+    },
+    {
+        "category": "Parkour Tracker",
+        "settings": [
+            {
+                "type": 6,
+                "name": "parkourtrackerenabled",
+                "value": false
+            },
+            {
+                "type": 1,
+                "name": "parkourxpos",
+                "value": 0
+            },
+            {
+                "type": 1,
+                "name": "parkourypos",
+                "value": 0
+            },
+            {
+                "type": 4,
+                "name": "parkournotstarted",
+                "value": ""
+            },
+            {
+                "type": 4,
+                "name": "parkouractive",
+                "value": ""
+            },
+            {
+                "type": 4,
+                "name": "parkournotended",
+                "value": ""
+            }
+        ]
+    },
+    {
+        "category": "Cookie Rewards",
+        "settings": [
+            {
+                "type": 6,
+                "name": "cookieRewardsEnabled",
+                "value": false
+            },
+            {
+                "type": 4,
+                "name": "cookieRewardsCommand",
+                "value": ""
+            }
+        ]
+    },
+    {
+        "category": "Egg Rewards",
+        "settings": [
+            {
+                "type": 6,
+                "name": "eggRewardsEnabled",
+                "value": false
+            },
+            {
+                "type": 4,
+                "name": "eggRewardsCommand",
+                "value": ""
+            }
+        ]
+    }
+]
